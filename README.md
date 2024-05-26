@@ -104,9 +104,9 @@ while flag == True:
         print("ROBO: Bye, feel free to contact me again!")
 
 ## Future Enhancements
-- **Advanced NLP Techniques: Integrate machine learning models for more sophisticated intent recognition.
-- **GUI: Develop a graphical user interface for a more user-friendly experience.
-- **Custom Training Data: Allow the bot to be trained on custom datasets to enhance its response accuracy.
+- **Advanced NLP Techniques**: Integrate machine learning models for more sophisticated intent recognition.
+- **GUI**: Develop a graphical user interface for a more user-friendly experience.
+- **Custom Training Data**: Allow the bot to be trained on custom datasets to enhance its response accuracy.
 ##Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests to improve the chatbot.
 ##License
