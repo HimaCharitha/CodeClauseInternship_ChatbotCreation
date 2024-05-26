@@ -83,7 +83,7 @@ def greeting(sentence):
         robo_response = robo_response + sent_tokens[idx]
         return robo_response
 
--- flag = True
+- flag = True
 print("ROBO: My name is Robo. I will answer your queries about Chatbots. If you want to exit, type Bye!")
 while flag == True:
     user_response = input()
