@@ -20,14 +20,14 @@ Make sure you have Python installed along with the following libraries:
 - `NLTK`
 - `Python`
 
-Running the Chatbot
+## Running the Chatbot
 To start the chatbot, run the chatbot.ipynb Jupyter notebook. You can launch Jupyter Notebook by executing the following command in your terminal:
 jupyter notebook chatbot.ipynb
 
-Usage
+## Usage
 The chatbot starts with a greeting and awaits user input. Type your messages to interact with the bot. The conversation continues until you type 'bye'.
 
-Code Overview
+## Code Overview
 Here's a brief overview of the code in chatbot.ipynb:
 import io
 import random
@@ -52,7 +52,6 @@ sent_tokens = nltk.sent_tokenize(raw)  # converts to list of sentences
 word_tokens = nltk.word_tokenize(raw)  # converts to list of words
 
 lemmer = nltk.stem.WordNetLemmatizer()
-# WordNet is a semantically-oriented dictionary of English included in NLTK.
 def LemTokens(tokens):
     return [lemmer.lemmatize(token) for token in tokens]
 remove_punct_dict = dict((ord(punct), None) for punct in string.punctuation)
@@ -104,15 +103,14 @@ while flag == True:
         flag = False
         print("ROBO: Bye, feel free to contact me again!")
 
-Future Enhancements
-Advanced NLP Techniques: Integrate machine learning models for more sophisticated intent recognition.
-GUI: Develop a graphical user interface for a more user-friendly experience.
-Custom Training Data: Allow the bot to be trained on custom datasets to enhance its response accuracy.
-Contributing
+## Future Enhancements
+- **Advanced NLP Techniques: Integrate machine learning models for more sophisticated intent recognition.
+- **GUI: Develop a graphical user interface for a more user-friendly experience.
+- **Custom Training Data: Allow the bot to be trained on custom datasets to enhance its response accuracy.
+##Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests to improve the chatbot.
-License
+##License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
 This updated `README.md` file reflects the changes in the code and specifies that the bot is now implemented in a Jupyter notebook (`chatbot.ipynb`).
 
 
