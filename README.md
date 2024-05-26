@@ -29,7 +29,7 @@ The chatbot starts with a greeting and awaits user input. Type your messages to 
 
 ## Code Overview
 Here's a brief overview of the code in chatbot.ipynb:
-import io
+- import io
 import random
 import string  # to process standard python strings
 import warnings
@@ -38,35 +38,35 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 warnings.filterwarnings('ignore')
 
-import nltk
+- import nltk
 from nltk.stem import WordNetLemmatizer
 nltk.download('popular', quiet=True) # for downloading packages
 nltk.download('punkt')
 nltk.download('wordnet')
 
-f = open('info.txt', 'r', errors='ignore')
+- f = open('info.txt', 'r', errors='ignore')
 raw = f.read()
 raw = raw.lower()  # converts to lowercase
 
-sent_tokens = nltk.sent_tokenize(raw)  # converts to list of sentences
+- sent_tokens = nltk.sent_tokenize(raw)  # converts to list of sentences
 word_tokens = nltk.word_tokenize(raw)  # converts to list of words
 
-lemmer = nltk.stem.WordNetLemmatizer()
-def LemTokens(tokens):
+- lemmer = nltk.stem.WordNetLemmatizer()
+- def LemTokens(tokens):
     return [lemmer.lemmatize(token) for token in tokens]
 remove_punct_dict = dict((ord(punct), None) for punct in string.punctuation)
 
-def LemNormalize(text):
+- def LemNormalize(text):
     return LemTokens(nltk.word_tokenize(text.lower().translate(remove_punct_dict)))
 
-GREETING_INPUTS = ("hello", "hi", "greetings", "sup", "what's up", "hey",)
+- GREETING_INPUTS = ("hello", "hi", "greetings", "sup", "what's up", "hey",)
 GREETING_RESPONSES = ["hi", "hey", "*nods*", "hi there", "hello", "I am glad! You are talking to me"]
 def greeting(sentence):
     for word in sentence.split():
         if word.lower() in GREETING_INPUTS:
             return random.choice(GREETING_RESPONSES)
 
-def response(user_response):
+- def response(user_response):
     robo_response = ''
     sent_tokens.append(user_response)
     TfidfVec = TfidfVectorizer(tokenizer=LemNormalize, stop_words='english')
@@ -83,7 +83,7 @@ def response(user_response):
         robo_response = robo_response + sent_tokens[idx]
         return robo_response
 
-flag = True
+-- flag = True
 print("ROBO: My name is Robo. I will answer your queries about Chatbots. If you want to exit, type Bye!")
 while flag == True:
     user_response = input()
