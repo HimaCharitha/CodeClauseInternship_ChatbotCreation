@@ -1,5 +1,6 @@
 # Simple Chatbot with NLP (NLTK & spaCy)
 
+![Description of the GIF](https://github.com/HimaCharitha/Simple-Chatbot-with-NLP-NLTK-spaCy-/blob/main/Chatbot%20demo.gif)
 
 
 
