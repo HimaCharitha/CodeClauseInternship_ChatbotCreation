@@ -1,6 +1,6 @@
 # Simple Chatbot with NLP (NLTK & spaCy)
 
-[Download the video](Untitled design.mp4)
+[Download the video](https://github.com/HimaCharitha/Simple-Chatbot-with-NLP-NLTK-spaCy-/blob/main/Untitled%20design.mp4)
 
 
 
