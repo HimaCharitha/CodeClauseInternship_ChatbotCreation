@@ -1,6 +1,6 @@
 # Simple Chatbot with NLP (NLTK & spaCy)
 
-[Download the video](C:\Users\vippa\Videos\Captures)
+
 
 
 This repository contains a simple yet effective chatbot built using natural language processing (NLP) libraries, specifically NLTK and spaCy. The bot is trained on predefined responses and can interact with users based on keyword matching and intent recognition.
